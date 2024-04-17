@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+main {
+  background-color: hsl(210, 36.36%, 95.69%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .inner-container {
+  background-color: hsl(210, 36.36%, 95.69%);
+  padding: 2em;
+  width: 60%;
+  height: 70%;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: grid;
+  grid-template-columns: 0fr 80% 0fr;
+  justify-content: space-between;
+}
+main .inner-container .col-1.logo h1 {
+  font-size: 2rem;
+}
+main .inner-container .col-1.logo .bars-container {
+  margin-top: 2em;
+}
+main .inner-container .col-1.logo .bars-container .bar {
+  background-color: #979797;
+  height: 70px;
+  width: 1px;
+  margin-top: 0.3em;
+}
+main .inner-container .col-2.hero {
+  text-transform: uppercase;
+  position: relative;
+}
+main .inner-container .col-2.hero .heading {
+  height: 200px;
+  width: 500px;
+  position: absolute;
+  top: 70%;
+  left: 0%;
+  z-index: 10;
+  transform: translate(0, -50%);
+  overflow: hidden;
+}
+main .inner-container .col-2.hero .heading h1 {
+  opacity: 0;
+  color: blue;
+  font-size: 5rem;
+  position: absolute;
+  left: -100%;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: black;
+}
+main .inner-container .col-2.hero .heading h1:nth-child(1) {
+  color: #ccb4c4;
+}
+main .inner-container .col-2.hero .heading h1:nth-child(2) {
+  color: #8198bc;
+}
+main .inner-container .col-2.hero .heading h1:nth-child(3) {
+  color: #d98300;
+}
+main .inner-container .col-2.hero .image {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 11.8%;
+  width: 0%;
+  height: 85%;
+  box-shadow: 0px 0px 3px 0px black;
+}
+main .inner-container .col-2.hero .image img {
+  display: block;
+  height: 110%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+main .inner-container .col-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .inner-container .col-3 .social {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .inner-container .more {
+  position: absolute;
+  bottom: 5%;
+}
+main .inner-container .more a {
+  color: rgba(0, 0, 0, 0.8117647059);
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+}/*# sourceMappingURL=index.css.map */
